@@ -1,5 +1,18 @@
 # Getting Started with Create React App
 
+## Tiến trình
+
+https://github.com/grafana/grafana/blob/main/public/app
+https://github.com/HospitalRun/hospitalrun-frontend/tree/master/src
+
+dev tool: prettier
+core: dependency, dùng chung
+shared: thành phần dùng chung như utils, hook
+Route: core/routes tổng hợp route trong dự án
+features: /features chia theo module chức năng. mỗi module có các view, component, model cục bộ (không chia sẻ ra bên ngoài)
+sdk: những api, model (DTO) mà BE hỗ trợ
+convention: theo mẫu
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

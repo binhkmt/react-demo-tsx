@@ -1,0 +1,21 @@
+// {
+//     "javascript.validate.enable": false,
+//     "angular.enable-strict-mode-prompt": false
+// }
+{
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/bazel-out/**": true,
+    "**/dist/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bazel-out": true,
+    "**/dist": true
+  },
+  "git.ignoreLimitWarning": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
