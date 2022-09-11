@@ -1,13 +1,9 @@
 // import { Breadcrumb, BreadcrumbItem } from "@hospitalrun/components";
-import React from "react";
-import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
 
 // import useTranslator from "../../shared/hooks/useTranslator";
 // import { RootState } from "../../shared/store";
 
 const Breadcrumbs = () => {
-  const history = useNavigate();
   //   const { t } = useTranslator();
   //   const { breadcrumbs } = useSelector((state: RootState) => state.breadcrumbs);
 

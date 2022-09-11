@@ -1,0 +1,12 @@
+/* Bootstrap overrides */
+
+@import "variables";
+
+/* Import bootstrap */
+
+@import "~bootstrap/scss/bootstrap";
+/* @import "bootstrap/dist/css/bootstrap.min.css";*/
+
+/* Other CSS Imports */
+
+/* All component level SCSS files are imported @ component level */
