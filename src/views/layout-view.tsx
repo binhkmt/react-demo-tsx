@@ -1,33 +1,21 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Breadcrumbs from "../core/components/breadcrumb/Breadcrumbs";
+import { Navbar } from "../core/components/navbar/Navbar";
 
 export function LayoutView() {
   return (
     <>
+      <Navbar bg={"dark"} className="" navItems={undefined}></Navbar>
+
       <div className="layout">
-        {/* <h3>Layout title</h3> */}
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/pricing">Pricing</Link>
-            </li>
-            <li>
-              <Link to="/abc">abc</Link>
-            </li>
-          </ul>
-        </nav>
-        <div style={{ height: "calc(100vh - 152px)" }}>
+        <div className="layout-body">
           <h3>Layout Body</h3>
           <div>
             <Breadcrumbs></Breadcrumbs>
           </div>
-          <Outlet />
+          <div className="main-content">
+            <Outlet />
+          </div>
           <div>
             <h3>Footer</h3>
           </div>

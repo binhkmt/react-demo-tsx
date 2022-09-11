@@ -1,5 +1,5 @@
-@import "antd/dist/antd.css";
-@import "bootstrap/dist/css/bootstrap.min.css";
+@import "./core/components/styles/main.scss";
+$navbarHeight: 56px;
 
 .App {
   text-align: center;
@@ -37,5 +37,23 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.layout-body {
+  height: calc(100vh - $navbarHeight);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-content {
+  height: 100%;
+  background-color: #eee;
+}
+
+@media screen and (min-width: 768px) {
+  .layout-body {
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }

@@ -6,11 +6,12 @@ export function TodoList(props: { todos: ITodo[] }) {
   return (
     <>
       <ul className="todo-list">
-        {props.todos.map((t, index) => (
-          <li key={t.id}>
-            {t.id} -<TodoItem todo={t}></TodoItem>
-          </li>
-        ))}
+        {props.todos &&
+          props.todos.map((t, index) => (
+            <li key={t.id}>
+              {t.id} -<TodoItem todo={t}></TodoItem>
+            </li>
+          ))}
       </ul>
     </>
   );

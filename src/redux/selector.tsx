@@ -1,4 +1,4 @@
-import { IAppState } from "./reducer";
+import { IAppState } from "./reducers";
 
 export const getTodoListSelector = (state: IAppState, searchText: string) => {
   if (!searchText) return state.todoList;

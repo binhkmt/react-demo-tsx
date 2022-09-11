@@ -10,7 +10,7 @@ import { Button } from "react-bootstrap";
 import { TodoList } from "../components/Todo/todo-list";
 
 import { getTodoListSelector } from "../redux/selector";
-import { IAppState, rootReducer } from "../redux/reducer";
+import { IAppState, rootReducer } from "../redux/reducers";
 import { ITodo } from "../App";
 
 type Props = PropsWithChildren<{}>;

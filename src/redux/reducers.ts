@@ -1,5 +1,6 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { combineReducers, createSlice } from "@reduxjs/toolkit";
 import { ITodo } from "../App";
+import noteSlice from "../features/Note/note-slice";
 
 export interface IAppState {
   filters: any;
@@ -8,7 +9,11 @@ export interface IAppState {
 
 const initState: IAppState = {
   filters: {},
-  todoList: [{ id: "kjkj", name: "init ne" }],
+  todoList: [
+    { id: "1", name: "todo 1" },
+    { id: "2", name: "todo 2" },
+    { id: "3", name: "todo 3" },
+  ],
 };
 
 // export const rootReducer = (
@@ -35,6 +40,11 @@ export const rootReducer = createSlice({
   reducers: {
     addTodo: (state, action) => {
       state.todoList.push(action.payload);
-    }, 
+    },
   },
+});
+
+export const reducers = combineReducers({
+  rootReducer: rootReducer.reducer,
+  myNote: noteSlice.reducer,
 });
